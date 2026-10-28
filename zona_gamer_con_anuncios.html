@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Zona Gamer Gratis</title>
+<style>
+:root{--bg:#0b1020;--panel:#141d33;--text:#f5f7ff;--muted:#aab5d0;--accent:#7c5cff;--accent2:#18d6b5}
+*{box-sizing:border-box}body{margin:0;font-family:system-ui,-apple-system,Segoe UI,Roboto,Arial;background:radial-gradient(circle at top right,#25205b 0,transparent 35%),var(--bg);color:var(--text)}
+header{padding:22px 6%;display:flex;justify-content:space-between;align-items:center;gap:16px;flex-wrap:wrap;border-bottom:1px solid #ffffff18}.logo{font-weight:900;font-size:1.2rem}.logo span{color:var(--accent2)}nav a{color:var(--muted);text-decoration:none;margin-left:16px;font-size:.95rem}nav a:hover{color:white}
+.hero{padding:64px 6% 42px;max-width:1100px;margin:auto}.tag{display:inline-block;color:var(--accent2);border:1px solid #18d6b555;border-radius:99px;padding:6px 12px;font-size:.8rem;font-weight:700}.hero h1{font-size:clamp(2.3rem,7vw,4.7rem);line-height:1.02;margin:18px 0}.hero h1 span{color:var(--accent2)}.hero p{max-width:620px;color:var(--muted);line-height:1.7}.search{display:flex;gap:10px;max-width:600px;margin-top:24px}.search input{min-width:0;flex:1;background:#ffffff10;border:1px solid #ffffff22;border-radius:12px;padding:14px;color:white;font-size:1rem}.search button,.btn{background:var(--accent);color:white;border:0;border-radius:12px;padding:13px 17px;font-weight:800;text-decoration:none;display:inline-block;cursor:pointer}.section{padding:20px 6% 60px;max-width:1200px;margin:auto}.section h2{font-size:1.7rem}.sub{color:var(--muted);margin-top:-8px}.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:18px;margin-top:24px}.card{background:linear-gradient(145deg,#18233c,#11182a);border:1px solid #ffffff13;border-radius:18px;padding:20px;display:flex;flex-direction:column;min-height:245px}.emoji{font-size:2.5rem}.card h3{margin:12px 0 5px}.card p{color:var(--muted);line-height:1.5;flex:1}.pill{font-size:.75rem;color:var(--accent2);font-weight:800;letter-spacing:.04em;text-transform:uppercase}.card .btn{align-self:flex-start}.notice{margin:0 6% 50px;padding:18px 20px;border:1px solid #ffffff20;border-radius:14px;background:#ffffff08;color:var(--muted);line-height:1.6}.notice strong{color:white}footer{text-align:center;padding:25px;color:var(--muted);border-top:1px solid #ffffff18;font-size:.9rem}
+
+.ad-slot{margin:24px auto;max-width:1000px;min-height:110px;padding:18px;border:1px dashed #7c5cff88;border-radius:14px;background:#ffffff06;text-align:center;color:var(--muted);display:flex;flex-direction:column;justify-content:center;gap:7px}
+.ad-slot strong{color:var(--accent2);font-size:.75rem;letter-spacing:.12em}
+.ad-slot small{font-size:.82rem}
+@media(max-width:520px){.ad-slot{margin:18px 4%;min-height:95px}}
+</style>
+</head>
+<body>
+<header><div class="logo">🎮 ZONA <span>GAMER</span></div><nav><a href="#juegos">Juegos</a><a href="#sitios">Más juegos</a></nav></header>
+<main>
+<!-- ESPACIO DE ANUNCIO: sustituye este bloque por el código oficial de AdSense cuando tu cuenta y sitio estén aprobados. -->
+<div class="ad-slot" aria-label="Espacio publicitario de demostración"><strong>PUBLICIDAD</strong><span>Espacio para anuncio de Google AdSense</span><small>Vista previa: todavía no muestra anuncios reales.</small></div>
+<section class="hero"><span class="tag">TU PRÓXIMA AVENTURA EMPIEZA AQUÍ</span><h1>Juega más.<br><span>Paga menos.</span></h1><p>Descubre juegos gratuitos para PC y Android. Los botones te llevan a páginas oficiales o tiendas conocidas para descargar de forma más segura.</p><div class="search"><input id="busqueda" type="search" placeholder="Buscar por nombre o plataforma…" aria-label="Buscar juegos"><button onclick="filtrar()">Buscar</button></div></section>
+<section class="section" id="juegos"><h2>🔥 Juegos gratis populares</h2><p class="sub">Selecciona un juego para visitar su página oficial.</p><div class="grid" id="lista">
+<article class="card" data-text="fall guys pc consola plataformas"><div class="emoji">🫘</div><span class="pill">PC · Consolas</span><h3>Fall Guys</h3><p>Competencias divertidas de obstáculos con otros jugadores.</p><a class="btn" href="https://www.fallguys.com/" target="_blank" rel="noopener">Ver juego ↗</a></article>
+<article class="card" data-text="valorant pc disparos estrategia"><div class="emoji">🎯</div><span class="pill">PC</span><h3>VALORANT</h3><p>Juego competitivo de disparos por equipos y habilidades.</p><a class="btn" href="https://playvalorant.com/" target="_blank" rel="noopener">Descargar ↗</a></article>
+<article class="card" data-text="league of legends lol pc estrategia"><div class="emoji">🛡️</div><span class="pill">PC</span><h3>League of Legends</h3><p>Batallas estratégicas por equipos con muchos personajes.</p><a class="btn" href="https://www.leagueoflegends.com/" target="_blank" rel="noopener">Descargar ↗</a></article>
+<article class="card" data-text="genshin impact pc android aventura rpg"><div class="emoji">🌌</div><span class="pill">PC · Android · Consolas</span><h3>Genshin Impact</h3><p>Aventura de mundo abierto, exploración y combates.</p><a class="btn" href="https://genshin.hoyoverse.com/" target="_blank" rel="noopener">Página oficial ↗</a></article>
+<article class="card" data-text="brawlhalla pc android lucha"><div class="emoji">🥊</div><span class="pill">PC · Android · Consolas</span><h3>Brawlhalla</h3><p>Juego de lucha de plataformas, fácil de empezar con amigos.</p><a class="btn" href="https://www.brawlhalla.com/" target="_blank" rel="noopener">Página oficial ↗</a></article>
+<article class="card" data-text="roblox pc android creatividad"><div class="emoji">🧱</div><span class="pill">PC · Android</span><h3>Roblox</h3><p>Una plataforma con miles de experiencias creadas por usuarios.</p><a class="btn" href="https://www.roblox.com/" target="_blank" rel="noopener">Jugar / instalar ↗</a></article>
+</div><p id="sinResultados" hidden>No encontré juegos con ese nombre. Prueba otra búsqueda.</p></section>
+<!-- Segundo espacio publicitario de demostración. No hagas clic en tus propios anuncios. -->
+<div class="ad-slot" aria-label="Espacio publicitario de demostración"><strong>PUBLICIDAD</strong><span>Promoción de juegos o aplicaciones</span><small>Aquí puedes colocar campañas autorizadas o enlaces de afiliado identificados.</small></div>
+<section class="section" id="sitios"><h2>🕹️ Más lugares para encontrar juegos</h2><div class="grid">
+<article class="card"><div class="emoji">🧩</div><h3>itch.io</h3><p>Muchos juegos indie gratuitos; revisa la página de cada juego y sus requisitos.</p><a class="btn" href="https://itch.io/games/free" target="_blank" rel="noopener">Explorar juegos ↗</a></article>
+<article class="card"><div class="emoji">🖥️</div><h3>Steam — Gratis</h3><p>Busca juegos free-to-play y comprueba los requisitos antes de instalar.</p><a class="btn" href="https://store.steampowered.com/genre/Free%20to%20Play/" target="_blank" rel="noopener">Ver catálogo ↗</a></article>
+<article class="card"><div class="emoji">📱</div><h3>Google Play</h3><p>Para Android, descarga desde la tienda oficial y revisa la compatibilidad.</p><a class="btn" href="https://play.google.com/store/games" target="_blank" rel="noopener">Abrir tienda ↗</a></article>
+</div></section>
+<div class="ad-slot" aria-label="Espacio publicitario de demostración"><strong>PUBLICIDAD</strong><span>Espacio para otro anuncio</span><small>Los anuncios reales requieren aprobación y código de la red publicitaria.</small></div>
+<div class="notice"><strong>Consejo de seguridad:</strong> esta página no aloja archivos ni distribuye juegos pirateados. Los enlaces llevan a sitios externos; algunos juegos incluyen compras opcionales, y la disponibilidad puede variar según tu dispositivo o país. Evita APK modificados y archivos de páginas desconocidas.</div></main>
+<!--
+CONFIGURACIÓN REAL DE ADSENSE (solo después de crear la cuenta y obtener tu código):
+1. Copia el código que AdSense te entrega para tu sitio.
+2. Pégalo dentro de <head> y </head>.
+3. Para anuncios por bloque, reemplaza cada .ad-slot por el código del bloque generado en AdSense.
+No uses IDs de ejemplo ni hagas clic en tus propios anuncios. La vista previa de arriba NO genera ingresos.
+-->
+<footer>© <span id="year"></span> Zona Gamer Gratis · Hecha para descubrir juegos gratuitos.</footer>
+<script>
+function filtrar(){const q=document.getElementById('busqueda').value.trim().toLowerCase();let count=0;document.querySelectorAll('#lista .card').forEach(c=>{const ok=(c.innerText+' '+c.dataset.text).toLowerCase().includes(q);c.hidden=!ok;if(ok)count++});document.getElementById('sinResultados').hidden=count!==0;}
+document.getElementById('busqueda').addEventListener('input',filtrar);document.getElementById('year').textContent=new Date().getFullYear();
+</script></body></html>
